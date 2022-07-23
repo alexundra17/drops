@@ -1,0 +1,3 @@
+wget -O geckodriver-linux64.tar.gz echo "https://github.com/`curl -s https://github.com/mozilla/geckodriver/releases | grep -E -o '/mozilla/geckodriver/releases/download/[a-z0-9/.-]{5,}linux64.tar.gz' | head -n 1`"
+tar xvzf geckodriver-linux64.tar.gz
+sudo mv geckodriver /bin
